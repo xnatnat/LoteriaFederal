@@ -10,6 +10,7 @@ public class Sorteio {
     private String identificador;
     private List<Integer> numerosSorteados;
     private Set<Aposta> apostasParticipantes;
+    private Integer idUltimoSorteio = 0;
     private PremioMegaSena premio;
 
     public Sorteio(String identificador){
@@ -39,10 +40,7 @@ public class Sorteio {
 
     public List<Aposta> getApostasGanhadoras() {
         List<Aposta> apostasGanhadoras = new ArrayList<Aposta>();
-//        return apostasParticipantes
-//                          .stream()
-//                          filter(cadaAposta -> numerosSorteados.equals(cadaAposta.getVolante().retornarNumerosSelecionados()))
-//                          .collect(Collectors.toList());
+
         for(Aposta aposta: apostasParticipantes) {
             if(numerosSorteados.equals(
                     aposta.getVolante().retornarNumerosSelecionados()))

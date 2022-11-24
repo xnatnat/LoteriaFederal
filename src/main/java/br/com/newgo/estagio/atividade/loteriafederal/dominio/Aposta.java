@@ -6,7 +6,7 @@ public class Aposta {
     private Participante participante;
     private Volante volante;
 
-    public Aposta(String identificador, Participante participante, Volante volante) {
+    public Aposta(String identificador, Participante participante) {
         setIdentificador(identificador);
         setParticipante(participante);
         setVolante(volante);
