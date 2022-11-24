@@ -53,20 +53,5 @@ public class VolanteMegaSenaTest {
         volanteP1.adicionarNumerosNoVolante(numerosAposta1);
     }
 
-    @Test
-    public void retornarNumerosSelecionadosTeste() {
-        Set<Integer> numerosAposta1 = new HashSet<Integer>();
-        numerosAposta1.add(1);
-        numerosAposta1.add(7);
-        numerosAposta1.add(9);
-        numerosAposta1.add(25);
-        numerosAposta1.add(42);
-        numerosAposta1.add(57);
-
-        Volante volanteP1 = new VolanteMegaSena();
-        volanteP1.adicionarNumerosNoVolante(numerosAposta1);
-        assertTrue(volanteP1.retornarNumerosSelecionados());
-    }
-
 
 }
